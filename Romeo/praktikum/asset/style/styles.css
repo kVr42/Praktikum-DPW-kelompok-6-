@@ -1,0 +1,312 @@
+/* Menyamakan ukuran elemen dengan memasukkan padding dan border ke dalam ukurannya. */
+* {
+  box-sizing: border-box;
+}
+
+/* Mengatur tampilan dasar seluruh halaman. */
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  color: #12324a;
+  background: #eef5f8;
+}
+
+/* Mengatur jarak atas dan tinggi baris judul. */
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  line-height: 1.2;
+}
+
+/* Mengatur ukuran dan jarak judul utama. */
+h1 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+}
+
+/* Memberi warna pada judul bagian konten. */
+h2 {
+  color: #0066a1;
+}
+
+/* Membatasi lebar konten utama dan memusatkannya. */
+main {
+  width: min(100% - 2rem, 1100px);
+  margin: 2rem auto;
+}
+
+/* Mengatur susunan daftar menu navigasi. */
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin: 1.5rem auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Menghilangkan garis bawah pada tautan navigasi. */
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Membuat section dan aside tampil sebagai panel konten. */
+section,
+aside {
+  margin: 1.5rem 0;
+  padding: clamp(1rem, 3vw, 2rem);
+  background: #ffffff;
+  border: 1px solid #d8e7ed;
+  border-radius: 10px;
+  box-shadow: 0 5px 18px rgba(0, 71, 112, 0.08);
+}
+
+/* Memusatkan figure dan mengatur jarak bawahnya. */
+figure {
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+/* Mengatur ukuran, border, dan bayangan gambar utama. */
+figure img {
+  display: block;
+  width: min(100%, 400px);
+  margin: 0 auto 0.75rem;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 71, 112, 0.16);
+}
+
+/* Menegaskan teks keterangan gambar. */
+figcaption {
+  font-weight: bold;
+  color: #0066a1;
+}
+
+/* Menata kutipan agar tampil sebagai blok yang menonjol. */
+blockquote {
+  max-width: 760px;
+  margin: 1.5rem auto 0;
+  padding: 1rem 1.5rem;
+  color: #31566b;
+  text-align: center;
+  border: 2px solid #9bd9e2;
+  border-left: 5px solid #00a8cc;
+  border-radius: 8px;
+  background: #f1f8fa;
+}
+
+/* Mengatur jarak isi daftar acara dari tepi kiri. */
+ol {
+  padding-left: 1.5rem;
+}
+
+/* Membuat tabel memenuhi lebar panel. */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border: 1px solid #c7dce5;
+  border-radius: 8px;
+}
+
+/* Mengatur jarak dan garis setiap sel tabel. */
+th,
+td {
+  padding: 0.8rem;
+  text-align: left;
+  border: 1px solid #c7dce5;
+}
+
+/* Memberi warna latar pada kepala tabel. */
+th {
+  color: #ffffff;
+  background: #0066a1;
+}
+
+/* Memberi warna berbeda pada baris tabel genap. */
+tr:nth-child(even) {
+  background: #f3f8fa;
+}
+
+/* Menata penanda teks dress code. */
+mark {
+  padding: 0.15rem 0.4rem;
+  color: #12324a;
+  background: #bde9ed;
+  border-radius: 4px;
+}
+
+/* Menebalkan label pada formulir. */
+label {
+  font-weight: bold;
+}
+
+/* Mengatur tampilan input teks, angka, dan textarea. */
+input[type="text"],
+input[type="number"],
+/* Mengizinkan textarea diubah tingginya. */
+textarea {
+  width: 100%;
+  max-width: 560px;
+  margin-top: 0.35rem;
+  padding: 0.7rem;
+  font: inherit;
+  color: #12324a;
+  border: 1px solid #b9d1dc;
+  border-radius: 6px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Menata tombol kirim formulir. */
+input[type="submit"] {
+  padding: 0.75rem 1.25rem;
+  font: inherit;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  background: #0066a1;
+  border: 0;
+  border-radius: 6px;
+}
+
+/* Mengubah warna tombol ketika kursor berada di atasnya. */
+input[type="submit"]:hover {
+  background: #064f79;
+}
+
+/* Mengatur tampilan header undangan. */
+.header-undangan {
+  padding: 2rem 1.5rem;
+  color: #ffffff;
+  text-align: center;
+  background: linear-gradient(135deg, #0066a1, #00a8cc);
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 12px rgba(0, 71, 112, 0.2);
+}
+
+/* Memusatkan seluruh isi footer undangan. */
+#footer-undangan {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  background-color: #12324a;
+}
+
+/* Mengatur ukuran dan posisi gambar di footer. */
+#footer-undangan img {
+  display: block;
+  width: min(100%, 300px);
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+/* Menata setiap item menu navigasi. */
+nav li {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  color: #003256;
+  list-style: none;
+  border: 1px solid #d4af37;
+  border-radius: 8px;
+  background-color: #f1f8fa;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+/* Mengubah tampilan item menu saat disentuh kursor. */
+nav li:hover {
+  color: #ffffff;
+  background-color: #0089b8;
+  border-color: #ffffff;
+}
+
+/* Membuat semua gambar tidak melebihi lebar wadahnya. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Menyesuaikan tampilan halaman pada layar kecil. */
+@media (max-width: 600px) {
+  /* Mengurangi padding header pada layar kecil. */
+  .header-undangan {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Menyusun menu secara vertikal pada layar kecil. */
+  nav ul {
+    flex-direction: column;
+  }
+
+  /* Memusatkan teks setiap item menu pada layar kecil. */
+  nav li {
+    justify-content: center;
+  }
+
+  /* Mengurangi lebar dan jarak konten utama pada layar kecil. */
+  main {
+    width: min(100% - 1rem, 1100px);
+    margin: 1rem auto;
+  }
+
+  /* Mengizinkan tabel digeser secara horizontal pada layar kecil. */
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  /* Mengurangi padding sel tabel pada layar kecil. */
+  th,
+  td {
+    padding: 0.65rem;
+  }
+}
+
+.kontainer {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 2px solid black;
+  position: relative;
+}
+
+.nempel {
+  border: 0.5px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+.item-1 {
+  background-color: #0284c7;
+  border: 1px solid black;
+  color: #ffffff;
+}
+
+.item-2 {
+  background-color: pink;
+  border: 1px solid black;
+  color: #000000;
+}
+
+.item-3 {
+  background-color: red;
+  border: 1px solid black;
+  color: #ffffff;
+}

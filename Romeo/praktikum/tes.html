@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undangan Pernikahan - Romeo &amp; Juliet</title>
+    <link rel="stylesheet" href="asset/style/styles.css" />
+  </head>
+  
+  <body>
+    <header class="header-undangan">
+      <h1>The Wedding of Romeo &amp; Juliet</h1>
+      <p>
+        Dengan memohon rahmat dan ridho Tuhan, kami bermaksud menyelenggarakan
+        syukuran pernikahan kami.
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#sambutan">Sambutan</a></li>
+          <li><a href="#acara">Susunan Acara</a></li>
+          <li><a href="#jadwal">Sesi Undangan</a></li>
+          <li><a href="#rsvp">Konfirmasi RSVP</a></li>
+        </ul>
+      </nav>
+      <hr />
+    </header>
+
+    <main>
+      <section id="sambutan">
+        <figure>
+          <img
+            src="asset/image/wedd orv.jpg" style="display: block; margin: 0 auto;"
+            alt="Foto Mempelai Berdua"
+            width="400"
+          />
+          <figcaption>Death Parade</figcaption>
+        </figure>
+
+        <blockquote>
+          <p>
+            <em
+              >"Dan di antara tanda-tanda kebesaran-Nya diciptakan-Nya untukmu
+              pasangan hidup dari jenismu sendiri agar kamu merasa tenteram dan
+              penuh kasih sayang."</em
+            >
+          </p>
+        </blockquote>
+      </section>
+
+      <section id="acara">
+        <h2>Susunan Acara</h2>
+        <ol type="1">
+          <li><strong>Akad Nikah:</strong> 08.00 - 09.30 WIB</li>
+          <li>
+            <strong>Temu Tradisional &amp; Sungkeman:</strong> 09.30 - 10.30 WIB
+          </li>
+          <li><strong>Resepsi &amp; Ramah Tamah:</strong> 11.00 - 16.00 WIB</li>
+        </ol>
+
+        <p>
+          <strong>Lokasi Acara:</strong> Ballroom Hotel Grand, Lantai 2.<br />
+          <a href="https://maps.google.com" target="_blank"
+            >Buka Penunjuk Lokasi di Google Maps</a
+          >
+        </p>
+      </section>
+
+      <section id="jadwal">
+        <h2>Jadwal Sesi Undangan &amp; Foto Keluarga</h2>
+        <table border="1">
+          <thead>
+            <tr>
+              <th>Sesi</th>
+              <th>Waktu (WIB)</th>
+              <th>Rombongan Tamu</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Sesi 1</td>
+              <td>11.00 - 12.30</td>
+              <td>Keluarga Besar Mempelai Pria &amp; Wanita</td>
+            </tr>
+            <tr>
+              <td>Sesi 2</td>
+              <td>12.30 - 14.00</td>
+              <td>Rekan Kerja &amp; Tamu Kehormatan</td>
+            </tr>
+            <tr>
+              <td>Sesi 3</td>
+              <td>14.00 - 16.00</td>
+              <td>Sahabat, Alumni &amp; Tamu Umum</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <aside id="info-dresscode">
+        <h3>Catatan Penting:</h3>
+        <p>
+          Tamu undangan disarankan hadir mengenakan pakaian bernuansa
+          <mark>Batik / Pastel</mark>.
+        </p>
+      </aside>
+
+      <hr />
+
+      <section id="rsvp">
+        <h2>Konfirmasi Kehadiran (RSVP)</h2>
+        <form action="/kirim-konfirmasi" method="POST">
+          <div>
+            <label for="namaTamu">Nama Lengkap Tamu:</label><br />
+            <input
+              type="text"
+              id="namaTamu"
+              name="nama_tamu"
+              placeholder="Contoh: Budi Santoso"
+              required
+            />
+          </div>
+          <br />
+
+          <div>
+            <label>Konfirmasi Kehadiran:</label><br />
+            <input
+              type="radio"
+              id="hadir"
+              name="status_kehadiran"
+              value="hadir"
+              checked
+            />
+            <label for="hadir">Pasti Hadir</label>
+
+            <input
+              type="radio"
+              id="ragu"
+              name="status_kehadiran"
+              value="ragu"
+            />
+            <label for="ragu">Masih Ragu</label>
+
+            <input
+              type="radio"
+              id="tidak"
+              name="status_kehadiran"
+              value="tidak"
+            />
+            <label for="tidak">Berhalangan Hadir</label>
+          </div>
+          <br />
+
+          <div>
+            <label for="jumlahOrang">Jumlah Tamu yang Hadir:</label><br />
+            <input
+              type="number"
+              id="jumlahOrang"
+              name="jumlah_orang"
+              min="1"
+              max="5"
+              value="1"
+            />
+          </div>
+          <br />
+
+          <div>
+            <label for="pesanDoa">Ucapan &amp; Doa Restu:</label><br />
+            <textarea
+              id="pesanDoa"
+              name="pesan_doa"
+              rows="4"
+              cols="40"
+              placeholder="Tuliskan ucapan selamat dan doa restu di sini..."
+            ></textarea>
+          </div>
+          <br />
+
+          <input type="submit" value="Kirim Konfirmasi Kehadiran" />
+        </form>
+      </section>
+
+      position: relative;
+        <div class="nempel">
+          <div class="kontainer">
+            <div class="item-1">break</div>
+            <div class="item-2">parry</div>
+            <div class="item-3">guard</div>
+          </div>
+        </div>
+
+      <div class="kontainer" stye="display: flex; justify-content: space-between; gap: 20px;">
+        <div class="item-1" style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <h2>atas</h2>
+        </div>
+        <div class="item-2" style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <h2>tengah</h2>
+        </div>
+        <div class="item-3" style="flex: 1; text-align: center; display: flex; align-items: center; justify-content: center;">
+          <h2>bawah</h2>
+        </div>
+      </div>
+
+      <br />
+      
+      <div class="kontainer" style="display: flex; justify-content: space-between; gap: 20px;">
+        <div class="item-1" style="flex: 1; text-align: center; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
+          <h1>kiri</h1>
+        </div>
+        <div class="item-2" style="flex: 1; text-align: center; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
+          <h1>tengah</h1>
+        </div>
+        <div class="item-3" style="flex: 1; text-align: center; aspect-ratio: 1/1; display: flex; align-items: center; justify-content: center;">
+          <h1>kanan</h1>
+        </div>
+      </div>
+    </main>
+
+    <hr />
+
+    <footer id="footer-undangan">
+      <p>
+        Merupakan suatu kehormatan bagi kami atas kehadiran dan doa restu Anda.
+      </p>
+      <p>
+        Kami yang berbahagia,<br /><strong
+          >Keluarga Besar Romeo &amp; Juliet</strong
+        >
+      </p>
+      <img
+        src="asset/image/yhd.jpg"
+        alt="Foto kenangan Romeo dan Juliet"
+        width="300"
+      />
+      <p>
+        <small
+          >&copy; 2026 The Wedding of Romeo &amp; Juliet. All rights
+          reserved.</small
+        >
+      </p>
+    </footer>
+  </body>
+</html>

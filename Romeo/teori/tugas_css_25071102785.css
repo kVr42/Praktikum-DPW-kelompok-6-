@@ -1,0 +1,95 @@
+/* Pengaturan halaman */
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f80202;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* Mengatur tabel sebagai wadah utama */
+table {
+    background-color: white;
+    border: 2px solid #1f4e79;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+h3 {
+    margin: 5px;
+    color: #1f4e79;
+    letter-spacing: 1px;
+}
+
+h4 {
+    color: #8b0000;
+    font-size: 20px;
+}
+
+/* Paragraf */
+p {
+    line-height: 1.8;
+    text-align: justify;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Teks penting */
+b {
+    color: #d62b2b;
+}
+
+u {
+    text-decoration-thickness: 2px;
+}
+
+/* Mengatur teks merah dari HTML */
+font[color="red"] {
+    color: #c0392b !important;
+    font-weight: bold;
+}
+
+/* Mengatur teks biru dari HTML */
+font[color="blue"] {
+    color: #1f618d !important;
+    font-weight: bold;
+}
+
+/* Judul Pancasila */
+ol {
+    background-color: #f7f9f9;
+    border-left: 5px solid #1f4e79;
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+li {
+    padding: 8px;
+    line-height: 1.6;
+}
+
+/* Efek ketika mouse diarahkan ke poin Pancasila */
+li:hover {
+    background-color: #d6eaf8;
+    border-radius: 5px;
+}
+
+/* Tampilan lebih baik pada layar kecil */
+@media (max-width: 750px) {
+    body {
+        padding: 10px;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+}
