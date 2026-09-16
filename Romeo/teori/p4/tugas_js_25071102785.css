@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 40px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+#konten-utama {
+  max-width: 850px;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+.pernyataan-nama {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+/* Judul UUD & Pembukaan berwarna ungu */
+.judul-uud {
+  color: #cd47fa;
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  line-height: 1.4;
+}
+
+/* Teks UUD justify rata kiri-kanan */
+.teks-uud {
+  text-align: justify;
+  margin-bottom: 16px;
+  font-size: 15px;
+}
+
+/* Warna highlight sama persis dengan modul */
+.highlight-pink {
+  background-color: #ed23ff;
+  color: #000000;
+  font-weight: bold;
+}
+
+.highlight-merah {
+  background-color: #ff0000;
+  color: #000000;
+  font-weight: bold;
+}
+
+.highlight-hijau {
+  background-color: #00ff00;
+  color: #000000;
+}
+
+.highlight-biru {
+  background-color: #0000ff;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* Judul & Isi Pancasila */
+.judul-pancasila {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.daftar-pancasila {
+  margin: 0 auto;
+  width: fit-content;
+  font-size: 15px;
+  line-height: 1.4;
+  padding-left: 20px;
+}
